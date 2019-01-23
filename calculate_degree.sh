@@ -23,4 +23,4 @@ yarn jar "$dirname/hadoop-streaming.jar" \
 
 hdfs dfs -get ass1/output/ $local_csv_result_path
 
-(echo "<node-id>, <in-degree>, <out-degree>, <total degree>" ;cat $local_csv_result_path/*)  > $local_csv_result_path/node_degrees.csv
+# (echo "<node-id>, <in-degree>, <out-degree>, <total degree>" ;cat $local_csv_result_path/*)  > $local_csv_result_path/node_degrees.csv
