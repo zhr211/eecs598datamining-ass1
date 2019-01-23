@@ -9,7 +9,7 @@ set -x # Below this line, each command will be printed to terminal before being 
 
 hdfs dfs -mkdir -p ass1
 # hdfs dfs -put $HDFS_input_path/twitter_rv.net ass1/input/
-hdfs dfs -rm -r aas1/output/
+hdfs dfs -rm -r ass1/output/
 
 yarn jar "$dirname/hadoop-streaming.jar" \
 -input $HDFS_input_path/twitter_rv.net \
