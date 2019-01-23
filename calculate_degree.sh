@@ -12,7 +12,7 @@ hdfs dfs -mkdir -p ass1
 hdfs dfs -rm -r ass1/output/
 
 yarn jar "$dirname/hadoop-streaming.jar" \
--input $HDFS_input_path/twitter_rv.net \
+-input $HDFS_input_path \
 -output ass1/output \
 -mapper map.py \
 -reducer red.py \
