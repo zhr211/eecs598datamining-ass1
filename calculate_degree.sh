@@ -2,8 +2,8 @@
 
 dirname="$(dirname "$0")" # Get script directory
 hadoop_queue_name="eecs598w19"
-HDFS_input_path=$1
-local_csv_result_path=$2
+HDFS_input_path="$1"
+local_csv_result_path="$2"
 
 set -x # Below this line, each command will be printed to terminal before being executed.
 
